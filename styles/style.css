@@ -22,7 +22,7 @@ body{
     border-radius: 5px;
     border: none;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 .para-white{
     color: rgba(19, 19, 24, 0.70);
@@ -131,10 +131,7 @@ header{
     align-items: center;
     justify-content: center;
 }
-.popular-tour img{
-   
-    
-}
+
 
 .popular-tour-text > p{
     padding-bottom: 26px;
@@ -352,4 +349,72 @@ footer{
     text-align: center;
     padding-top: 50px;
     padding-bottom: 100px;
+}
+.explore-list > li{
+    color: #131318;
+    font-weight: 600;
+}
+.nature-img{
+    position: relative;
+    text-align: center;
+}
+
+
+/* deals and discount styles */
+.deals{
+    text-align: center;
+}
+.deals > p{
+    max-width: 640px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+.deals-bg{
+    background-image: url('../Images/Group2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 55px 50px 55px 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.deals-package {
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+    gap:45px
+
+}
+.deals-package > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.deals-package > div > p{
+    padding-top: 10px;
+}
+.Packages-div{
+    max-width: 540px;
+    height: 380px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 40px;
+    text-align: left;
+}
+.Packages-div > h2,p,h3{
+    padding-bottom: 16px;
+}
+.deals-bg-2{
+    background-image: url('../Images/Group3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 55px 50px 55px 50px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 24px;
 }
