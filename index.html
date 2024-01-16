@@ -19,11 +19,12 @@
                 <h2>Travel <span class="special-color">Hunt</span></h2>
             </div>
             <ul>
-                <li><a href="" class="special-color">Home</a></li>
-                <li><a href="">Packages</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+                <li class="hide-md"><a href="" class="special-color">Home</a></li>
+                <li class="hide-md"><a href="">Packages</a></li>
+                <li class="hide-md"><a href="">Testimonial</a></li>
+                <li class="hide-md"><a href="">Blog</a></li>
+                <li class="hide-md"><a href="">Contact</a></li>
+<!-- added --><li class="menu-bar"><i class="fa-solid fa-bars"></i></li>
             </ul>
           </nav>
     </header>
@@ -31,12 +32,22 @@
     <main>
         <section class="banner container">
                 <h1>Explore Your Travel</h1>
-            <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+            <p>Most likely, some or all of these locations are on your list of ideal vacation spots. So don't delay anymore, keep exploring the universe.</p>
             <div class="banner-field">
                 <div class="search-container">
                     <input type="text" placeholder="Where go">
-                    <input type="text" placeholder="When">
-                    <input type="text" placeholder="Select type">
+                    <select name="When" id="">
+                        <option value="" disabled selected hidden>When</option>
+                        <option value="Day">Day</option>
+                        <option value="Night">Night</option>
+                    </select>
+                    <select name="Select-type" id="">
+                        <option value="" disabled selected hidden>Select type</option>
+                        <option value="solo">Solo</option>
+                        <option value="group">Group</option>
+                        <option value="budget">Budget</option>
+                        <option value="adventure">Adventure</option>
+                    </select>
                     <button class="btn"><i class="fa-solid fa-magnifying-glass"></i> Find Now</button>
                 </div>
             </div>
@@ -45,21 +56,24 @@
         <section class="popular-tour container">
             <div class="popular-tour-text">
                 <h1 class="section-heading">Our Popular Tours</h1>
-                <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                <p>The top attractions on this list pay tribute to regional history and cultural monuments at well-known locations that have captivated global attention and driven tourists around the world in search of architectural wonders and must-see locations.</p>
                 <ul>
-                    <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</li>
-                    <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
-                    <li>Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
+                    <li>Maldivs: The gorgeous islands are laid back and provide an experience that's best compared to a desert island escape with first-rate lodging, mouthwatering cuisine, first-rate service.</li>
+                    <li>North America: The nation is home to a wide variety of cultures and ethnic groups, and its natural features—such as its climate, wildlife, and vegetation—as well as its historical landmarks and ancient ruins.</li>
+                    <li>Indonesia: It is home to some of the most breathtaking natural wonders on the planet. Its breathtaking natural beauty can be found in everything from the blue waves of Raja Ampat to Bali's verdant paddy fields.</li>
                 </ul>
-                <p>Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt.</p>
+                <p>There are many more on the list of our dream destinations.</p>
                 <button class="btn">Read More</button>
             </div>
-            <img src="./Images/Rectangle4.png" alt="">
+            <div class="popular-tour-img">
+                <img src="./Images/Rectangle4.png" alt="">
+            </div>
+            
         </section>
 
         <section class="destination container">
             <h1 class="section-heading">Choose Your Destination</h1>
-            <p class="para-white">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+            <p class="para-white">"Happiness is a journey, not a destination." Let's explore the top destinations..</p>
             <div class="destination-img-container">
                 <div class="destination-image-1"><img src="./Images/Rectangle5.png" alt=""><div class="img-center">Maldives</div></div>
                 <div class="destination-image-2"><img src="./Images/Rectangle8.png" alt=""><div class="img-center">Indonesia</div></div>
@@ -73,24 +87,24 @@
 
         <section class="services container">
             <h1 class="section-heading">Why Choose Us</h1>
-            <p class="para-white">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+            <p class="para-white">To make your journey organised, memorable and affordable, we are always there for you.</p>
             <div class="sevice-card-container">
                 <div class="service-card-1">
                     <img src="./icon/hotel.svg" alt="">
                     <h3>Handpicked Hotels</h2>
-                    <p class="para-gray">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                    <p class="para-gray">We offer best hotels near the tourist spots with affordable prices that may save your time, fatigue and money.</p>
                 </div>
                 
                 <div class="service-card-2">
                     <img src="./icon/map.svg" alt="">
                     <h3>World Class Service</h2>
-                    <p class="para-gray">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                    <p class="para-gray">We habe a knowledgeable travel team who will make personalized recommendations and offer tips on destinations.</p>
                 </div>
                 
                 <div class="service-card-3">
                     <img src="./icon/price-tag.svg" alt="">
                     <h3>Best Price Guarantee</h2>
-                    <p class="para-gray">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                    <p class="para-gray">Find the best deal tours across Southeast Asia with reliable services, best price, and high-quality guaranteed.</p>
                 </div>
                 
                 
@@ -99,7 +113,7 @@
 
         <section class="deals container">
             <h2 class="section-heading">Deals & Discounts</h2>
-            <p class="para-white">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+            <p class="para-white">Let's see the packages to of most trending places with reasonable prices.</p>
 
             <div class="deals-bg">
                 <div class="Packages-div">
@@ -117,9 +131,9 @@
                             <p>Malaysia</p>
                         </div>
                     </div>
-                    <h2>Tour To Satorini</h2>
-                    <p>Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
-                    <h3>Price: $1300-$1500</h3>
+                    <h2>Tour To Kuala Lumpur</h2>
+                    <p>Kuala Lumpur is usually recognised for its contemporary skyline, flashy shopping malls, historic mosques and high-end hotels.</p>
+                    <h3 class="special-color">Price: $1100-$1300</h3>
                     <button class="btn">Book Now</button>
 
                 </div>
@@ -138,12 +152,12 @@
                         </div>
                         <div>
                             <img src="./icon/location.svg" alt="">
-                            <p>Malaysia</p>
+                            <p>Maldives</p>
                         </div>
                     </div>
-                    <h2>Tour To Satorini</h2>
-                    <p>Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
-                    <h3>Price: $1300-$1500</h3>
+                    <h2>Tour To Baa Atoll</h2>
+                    <p>Baa atoll consists of several habitats that support the rich biodiversity of the atoll and includes coral reefs, islands, sea grass beds and mangroves.</p>
+                    <h3 class="special-color">Price: $2200-$2500</h3>
                     <button class="btn">Book Now</button>
 
                 </div>
@@ -162,30 +176,97 @@
                         </div>
                         <div>
                             <img src="./icon/location.svg" alt="">
-                            <p>Malaysia</p>
+                            <p>Bangladesh</p>
                         </div>
                     </div>
-                    <h2>Tour To Satorini</h2>
-                    <p>Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
-                    <h3>Price: $1300-$1500</h3>
+                    <h2>Tour To Cox's Bazar</h2>
+                    <p>Cox's Bazar beach is the longest sea beaches in the world. It's a sandy beach with an unbroken 155 Km length.</p>
+                    <h3 class="special-color">Price: $800-$1000</h3>
                     <button class="btn">Book Now</button>
 
                 </div>
             </div>
-            <button class="btn">See All Packages</button>
+            <button class="btn btn-hide">See All Packages</button>
         </section>
 
         <section class="popular-tour container">
             <div class="popular-tour-text">
                 <h1 class="section-heading">A Simple Perfect Place To Get Lost</h1>
-                <p>Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.</p>
+                <p>Several places for treks and cultural visits to the mountains of Bangladesh. This is a fantastic opportunity to get a sense of the nation's natural splendor as well as its people.</p>
                 <ul class="explore-list">
-                    <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
-                    <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+                    <li>Sajek Valley is currently one of the most popular tour destinations for travelers.</li>
+                    <li>Bandarban and Rangamati are two most attracting places for mountains lovers.</li>
                 </ul>
                 <button class="btn">See More</button>
             </div>
             <div class="nature-img"><img src="./Images/Group5.png" alt=""><div class="img-center">Watch Our Mountain in Bangladesh</div></div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-heading review-heading">Reviews</h2>
+            <div class="reviews">
+                <div class="single-review">
+                    <div class="identity">
+                        <h3 class="name">Mark Jeff</h3>
+                        <div>
+                        <h4 class="trip">Trip to Bali</h4>
+                        <p class="rating para-gray">Rating:&nbsp; 4.5/5</p>
+                        </div>
+                    </div>
+                    <p>It was a great experience provided by Travel hunt. Everything was good.  Accessibility to hotel, cleanliness, food, transports- every thing was perfect.</p>
+                </div>
+                <div class="single-review">
+                    <div class="identity">
+                        <h3 class="name">Chris Haris</h3>
+                        <div>
+                        <h4 class="trip">Trip to Thailand</h4>
+                        <p class="rating para-gray">Rating:&nbsp; 5/5</p>
+                        </div>
+                    </div>
+                    <p>Experience- the tour was super awesome. All were good more than our expectations. Cab & services -very good Hotels- excellent Agent- excellent!!</p>
+                </div>
+                <div class="single-review">
+                    <div class="identity">
+                        <h3 class="name">Ayush Kumar</h3>
+                        <div>
+                        <h4 class="trip">Trip to Srilanka</h4>
+                        <p class="rating para-gray">Rating:&nbsp; 3.5/5</p>
+                        </div>
+                    </div>
+                    <p>Could have planned a better itinerary nd at reasonable price. Trip was very nice but could have explored more.</p>
+                </div>
+                <div class="single-review">
+                    <div class="identity">
+                        <h3 class="name">Harish Gulshan</h3>
+                        <div>
+                        <h4 class="trip">Trip to Himalaya</h4>
+                        <p class="rating para-gray">Rating:&nbsp; 4/5</p>
+                        </div>
+                    </div>
+                    <p>I will provde some honest feedback. It was a nice trip but at some point it could have been better.</p>
+                </div>
+                <div class="single-review">
+                    <div class="identity">
+                        <h3 class="name">Jennifer</h3>
+                        <div>
+                        <h4 class="trip">Trip to Malaisia</h4>
+                        <p class="rating para-gray">Rating:&nbsp; 4.5/5</p>
+                        </div>
+                    </div>
+                    <p>Loved their services. Staff is very Cooperative. They provide best services according to customer's requirements and budget.</p>
+                </div>
+                <div class="single-review">
+                    <div class="identity">
+                        <h3 class="name">Alia Sharma</h3>
+                        <div>
+                        <h4 class="trip">Trip to Bali</h4>
+                        <p class="rating para-gray">Rating:&nbsp; 4/5</p>
+                        </div>
+                    </div>
+                    <p>We were on a honeymoon trip.. Our first destination was Kashmir and we were given a 4 star because of the resort.</p>
+                </div>
+            </div>
+            <div class="btn-div"><button class="btn">See more &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button></div>
         </section>
 
         <section class="newsletter container">
@@ -213,7 +294,7 @@
             <img src="./Images/Group4.png" alt="">
             <h2>Travel <span class="special-color">Hunt</span></h2>
         </div>
-        <p class="para-gray footer-description">Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate. Leo erat maecenas vitae elementum ultricies nullam.</p>
+        <p class="para-gray footer-description">Travel Hunt is a provider of travel-related services.  Top-ranked company for online bookings and associated services.</p>
         <div class="social-links">
             <span><i class="fa-brands fa-twitter"></i></span>
             <span><i class="fa-brands fa-facebook"></i></span>

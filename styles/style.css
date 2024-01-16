@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    max-width: 1440px;
     font-family: 'Mulish', sans-serif;
 }
+
 .container{
     max-width: 1170px;
     margin: 0 auto 100px;
@@ -40,8 +38,9 @@ body{
     font-weight: 800;
     padding-bottom: 24px;
 }
-
-
+.menu-bar{
+    display: none;
+}
 header{
     max-width: 1170px;
     margin: 0 auto;
@@ -95,6 +94,9 @@ header{
     color: #FFF;
     padding-top: 100px;
     padding-bottom: 24px;
+    background: linear-gradient(45deg, rgb(208, 231, 240, 0.5), rgb(167, 224, 167, 0.6));
+    background-clip: text;
+    color: transparent;
 }
 .banner > p {
     max-width: 676px;
@@ -110,7 +112,7 @@ header{
     width: 65%;
     margin: 0 auto;
 }
-.search-container input{
+.search-container input, select{
     padding: 16px 12px;
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
@@ -131,7 +133,15 @@ header{
     align-items: center;
     justify-content: center;
 }
-
+.popular-tour-text{
+    width: 50%;
+}
+.popular-tour-img{
+    width: 50%;
+}
+.popular-tour-img > img{
+    width: 100%;
+}
 
 .popular-tour-text > p{
     padding-bottom: 26px;
@@ -227,8 +237,9 @@ header{
     padding-bottom: 32px;
 }
 .sevice-card-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap:24px;
 }
 .service-card-1{
@@ -237,6 +248,7 @@ header{
     border-radius: 10px;
     padding: 32px 32px 0;
     text-align: left;
+    flex-basis: 48%;
 }
 .service-card-2{
     background-color: rgba(41, 206, 246, 0.05);
@@ -244,6 +256,7 @@ header{
     border-radius: 10px;
     padding: 32px 32px 0;
     text-align: left;
+    flex-basis: 48%;
 }
 .service-card-3{
     background-color: rgba(251, 181, 99, 0.05);
@@ -251,6 +264,7 @@ header{
     border-radius: 10px;
     padding: 32px 32px 0;
     text-align: left;
+    flex-basis: 48%;
 }
 .sevice-card-container img, h3 {
     padding-bottom: 16px;
@@ -277,12 +291,18 @@ header{
     padding-bottom: 24px;
 }
 .newsletter-text > p{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
+
 .newsletter-img{
     width: 60%;
     position: relative;
 }
+.newsletter-img > img{
+    width: 100%;
+}
+
+
 .newsletter-text > form > input{
     display: block;
     padding: 18px;
@@ -306,8 +326,8 @@ header{
     transform: rotate(-20deg);
     text-align: center;
     position: absolute;
-    top: 68%;
-    left: 64%;
+    top: 66%;
+    left: 61%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -316,7 +336,6 @@ header{
 /* footer section styles */
 footer{
     background-color: rgba(19, 19, 24, 0.05);
-    min-height: 300px;
 }
 .footer-logo{
     justify-content: center;
@@ -417,4 +436,34 @@ footer{
     display: flex;
     justify-content: flex-start;
     margin-bottom: 24px;
+}
+
+/* unique section styles */
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.single-review{
+    flex-basis: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.identity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.review-heading{
+    text-align: center;
+}
+.btn-div{
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    margin-right: 20px;
 }
